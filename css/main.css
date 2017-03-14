@@ -1,0 +1,82 @@
+body{
+	font-family:calibri;
+	padding-top:80px;
+}
+
+nav#nav_edit{
+	background : rgba(205,21,31,1);
+	border-bottom:1px solid rgba(205,21,31,1);
+}
+
+a#head{
+	font-family:'Nunito', sans-serif;
+	color:white;
+}
+
+a#links{
+	color:white;
+	transition:.5s;
+}
+
+a#links:hover{
+	text-shadow: 0 0 2px white;
+	color:rgba(205,21,31,1);
+}
+
+button#but_edit{
+	border:1px solid white;
+	transition:.5s;
+}
+
+button#but_edit:hover{
+	background:white;
+}
+
+span{
+	transition:.5s;
+	background:white;
+}
+
+button#but_edit:hover span{
+	background:rgba(205,21,31,1);
+}
+
+.jumbotron{
+	background:rgba(0,0,0,0);
+	text-align:center;
+}
+
+.jumbotron h1{
+	color:rgba(205,21,31,1);
+	font-family: 'Raleway' , sans-serif;
+}
+
+.input input{
+	width:50vh;
+	height:5vh;
+	text-align:center;
+	font-family:century gothic;
+	outline:none;
+	transition:0.5s;
+}
+
+
+#heada{
+	font-family:century gothic;
+	text-align:center;
+}
+
+#heada .col-xs-12 .jumbotron h1{
+	font-family:'Montserrat' , sans-serif;
+}
+
+#heada .col-xs-12 .jumbotron p{
+	font-size:5vh;
+	color:rgba(205,21,31,1);
+	text-align:center;
+}
+
+textarea{
+	text-align:center;
+}
+

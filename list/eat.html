@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>|Eatables|</title>
+	<link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Raleway|Comfortaa' rel='stylesheet' type='text/css'>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="../css/main.css">
+	<link rel="stylesheet" type="text/css" href="../css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="../css/list.css">
+	<script type="text/javascript">
+
+function quan(e){
+	var x = prompt("Enter : ");
+	e.innerText = x;
+}
+</script>
+</head>
+<body>
+
+<div class="container-fluid">
+	<nav class="nav navbar-fixed-top" role="navigation" id="nav_edit">
+	    <div class="container-fluid">
+	        <div class="navbar-header">
+	    	    <a href="../main.html" class="navbar-brand" id="head">TuckTec</a>
+	    	    <button class="collapsed navbar-toggle" type="button" data-toggle="collapse" id="but_edit" data-target="#ham">
+	    	    	<span class="sr-only">Navigation Toggle</span>
+	    	    	<span class="icon-bar"></span>
+	    	    	<span class="icon-bar"></span>
+	    	    </button>
+	        </div>
+
+	        <div class="navbar-collapse" id="ham">
+	        <ul class="nav navbar-nav" role="menu">
+	        	<li> <a href="../list.html" id="links">List</a> </li>
+	        	<li> <a href="../contact.html" id="links">Contact</a></li>
+	        </ul>
+	        </div>
+	    </div>
+	</nav>
+
+<!--
+	<div class="container-fluid">
+            	<div class="row">
+            		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-4" id="item_head">Item</div>
+            		<div class="col-lg-1 col-md-1 col-sm-1 col-xs-0"></div>
+            		<div class="col-lg-2 col-md-2 col-sm-2 col-xs-4" id="item_head">Quantity</div>
+            		<div class="col-lg-1 col-md-1 col-sm-1 col-xs-0"></div>
+            		<div class="col-lg-2 col-md-2 col-sm-2 col-xs-4" id="item_head">Price</div>
+            	</div>
+	</div>
+-->
+
+<div class="container-fluid">
+	<div class="row">
+	    <div class="col-lg-1 col-md-1 col-sm-1 col-xs-0"></div>
+		<div class="col-lg-5 col-md-5 col-sm-5 col-xs-8" id="item" style="background:rgba(205,21,31,0.1);">ITEM ( Price )</div>
+		<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
+		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-3" id="item" style="background:rgba(205,21,31,0.1);">QUANTITY</div>
+		<div class="col-lg-1 col-md-1 col-sm-1 col-xs-0"></div>
+	</div>
+
+	<div class="row">
+	    <div class="col-lg-1 col-md-1 col-sm-1 col-xs-0"></div>
+		<div class="col-lg-5 col-md-5 col-sm-5 col-xs-8" id="item"> <input type="text" name="" placeholder="Enter Item name" id="newItem"> </div>
+		<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
+		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-3 quant" id="item" onclick="quan(this)">Quantity </div>
+		<div class="col-lg-1 col-md-1 col-sm-1 col-xs-0"></div>
+	</div>
+
+	<div class="row">
+	    <div class="col-lg-1 col-md-1 col-sm-1 col-xs-0"></div>
+		<div class="col-lg-5 col-md-5 col-sm-5 col-xs-8" id="item">Maggi(10,20)</div>
+		<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
+		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-3" id="item" onclick="quan(this)">Quantity</div>
+		<div class="col-lg-1 col-md-1 col-sm-1 col-xs-0"></div>
+	</div>
+
+	<div class="row">
+	    <div class="col-lg-1 col-md-1 col-sm-1 col-xs-0"></div>
+		<div class="col-lg-5 col-md-5 col-sm-5 col-xs-8" id="item">Egg(6)</div>
+		<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
+		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-3" id="item" onclick="quan(this)">Quantity</div>
+		<div class="col-lg-1 col-md-1 col-sm-1 col-xs-0"></div>
+	</div>
+
+	<div class="row">
+	    <div class="col-lg-1 col-md-1 col-sm-1 col-xs-0"></div>
+		<div class="col-lg-5 col-md-5 col-sm-5 col-xs-8" id="item">KitKat(10)</div>
+		<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
+		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-3" id="item" onclick="quan(this)">Quantity</div>
+		<div class="col-lg-1 col-md-1 col-sm-1 col-xs-0"></div>
+	</div>
+
+	<div class="row">
+	    <div class="col-lg-1 col-md-1 col-sm-1 col-xs-0"></div>
+		<div class="col-lg-5 col-md-5 col-sm-5 col-xs-8" id="item">KrackJack(10)</div>
+		<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
+		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-3" id="item" onclick="quan(this)">Quantity</div>
+		<div class="col-lg-1 col-md-1 col-sm-1 col-xs-0"></div>
+	</div>
+
+	<div class="row">
+	    <div class="col-lg-1 col-md-1 col-sm-1 col-xs-0"></div>
+		<div class="col-lg-5 col-md-5 col-sm-5 col-xs-8" id="item">Britania Rusk(65)</div>
+		<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
+		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-3" id="item" onclick="quan(this)">Quantity</div>
+		<div class="col-lg-1 col-md-1 col-sm-1 col-xs-0"></div>
+	</div>
+
+	<div class="row">
+	    <div class="col-lg-1 col-md-1 col-sm-1 col-xs-0"></div>
+		<div class="col-lg-5 col-md-5 col-sm-5 col-xs-8" id="item">Milano(30)</div>
+		<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
+		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-3" id="item" onclick="quan(this)">Quantity</div>
+		<div class="col-lg-1 col-md-1 col-sm-1 col-xs-0"></div>
+	</div>
+
+	<div class="row">
+	    <div class="col-lg-1 col-md-1 col-sm-1 col-xs-0"></div>
+		<div class="col-lg-5 col-md-5 col-sm-5 col-xs-8" id="item">Hide n Seek Fab(20)</div>
+		<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
+		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-3" id="item" onclick="quan(this)">Quantity</div>
+		<div class="col-lg-1 col-md-1 col-sm-1 col-xs-0"></div>
+	</div>
+
+	<div class="row">
+	    <div class="col-lg-1 col-md-1 col-sm-1 col-xs-0"></div>
+		<div class="col-lg-5 col-md-5 col-sm-5 col-xs-8" id="item">Kurkure Khaata-Meetha(10)</div>
+		<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
+		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-3" id="item" onclick="quan(this)">Quantity</div>
+		<div class="col-lg-1 col-md-1 col-sm-1 col-xs-0"></div>
+	</div>
+
+	<div class="row">
+	    <div class="col-lg-1 col-md-1 col-sm-1 col-xs-0"></div>
+		<div class="col-lg-5 col-md-5 col-sm-5 col-xs-8" id="item">Dal Fry MTR(75)</div>
+		<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
+		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-3" id="item" onclick="quan(this)">Quantity</div>
+		<div class="col-lg-1 col-md-1 col-sm-1 col-xs-0"></div>
+	</div>
+
+	<div class="row">
+	    <div class="col-lg-1 col-md-1 col-sm-1 col-xs-0"></div>
+		<div class="col-lg-5 col-md-5 col-sm-5 col-xs-8" id="item">Eclairs(100)</div>
+		<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
+		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-3" id="item" onclick="quan(this)">Quantity</div>
+		<div class="col-lg-1 col-md-1 col-sm-1 col-xs-0"></div>
+	</div>
+
+	<div class="row">
+	    <div class="col-lg-1 col-md-1 col-sm-1 col-xs-0"></div>
+		<div class="col-lg-5 col-md-5 col-sm-5 col-xs-8" id="item">Fruit Love(1)</div>
+		<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
+		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-3" id="item" onclick="quan(this)">Quantity</div>
+		<div class="col-lg-1 col-md-1 col-sm-1 col-xs-0"></div>
+	</div>
+
+	<div class="row">
+	    <div class="col-lg-1 col-md-1 col-sm-1 col-xs-0"></div>
+		<div class="col-lg-5 col-md-5 col-sm-5 col-xs-8" id="item">Juizy Milk(1)</div>
+		<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
+		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-3" id="item" onclick="quan(this)">Quantity</div>
+		<div class="col-lg-1 col-md-1 col-sm-1 col-xs-0"></div>
+	</div>
+
+	<div class="row">
+	    <div class="col-lg-1 col-md-1 col-sm-1 col-xs-0"></div>
+		<div class="col-lg-5 col-md-5 col-sm-5 col-xs-8" id="item">Vicks toffee(1)</div>
+		<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
+		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-3" id="item" onclick="quan(this)">Quantity</div>
+		<div class="col-lg-1 col-md-1 col-sm-1 col-xs-0"></div>
+	</div>
+
+	<div class="row">
+	    <div class="col-lg-1 col-md-1 col-sm-1 col-xs-0"></div>
+		<div class="col-lg-5 col-md-5 col-sm-5 col-xs-8" id="item">Parle Orange Bite(1)</div>
+		<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
+		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-3" id="item" onclick="quan(this)">Quantity</div>
+		<div class="col-lg-1 col-md-1 col-sm-1 col-xs-0"></div>
+	</div>
+
+	<div class="row">
+	    <div class="col-lg-1 col-md-1 col-sm-1 col-xs-0"></div>
+		<div class="col-lg-5 col-md-5 col-sm-5 col-xs-8" id="item">Parle Namkeen(5)</div>
+		<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
+		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-3" id="item" onclick="quan(this)">Quantity</div>
+		<div class="col-lg-1 col-md-1 col-sm-1 col-xs-0"></div>
+	</div>
+
+	<div class="row">
+	    <div class="col-lg-1 col-md-1 col-sm-1 col-xs-0"></div>
+		<div class="col-lg-5 col-md-5 col-sm-5 col-xs-8" id="item">Nescafe Pouch(5)</div>
+		<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
+		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-3" id="item" onclick="quan(this)">Quantity</div>
+		<div class="col-lg-1 col-md-1 col-sm-1 col-xs-0"></div>
+	</div>
+
+	<div class="row">
+	    <div class="col-lg-1 col-md-1 col-sm-1 col-xs-0"></div>
+		<div class="col-lg-5 col-md-5 col-sm-5 col-xs-8" id="item">Sprite(35)</div>
+		<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
+		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-3" id="item" onclick="quan(this)">Quantity</div>
+		<div class="col-lg-1 col-md-1 col-sm-1 col-xs-0"></div>
+	</div>
+
+	<div class="row">
+	    <div class="col-lg-1 col-md-1 col-sm-1 col-xs-0"></div>
+		<div class="col-lg-5 col-md-5 col-sm-5 col-xs-8" id="item">Coca Cola(35)</div>
+		<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
+		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-3" id="item" onclick="quan(this)">Quantity</div>
+		<div class="col-lg-1 col-md-1 col-sm-1 col-xs-0"></div>
+	</div>
+
+	<div class="row">
+	    <div class="col-lg-1 col-md-1 col-sm-1 col-xs-0"></div>
+		<div class="col-lg-5 col-md-5 col-sm-5 col-xs-8" id="item">Limca(35)</div>
+		<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
+		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-3" id="item" onclick="quan(this)">Quantity</div>
+		<div class="col-lg-1 col-md-1 col-sm-1 col-xs-0"></div>
+	</div>
+
+	<div class="row">
+	    <div class="col-lg-1 col-md-1 col-sm-1 col-xs-0"></div>
+		<div class="col-lg-5 col-md-5 col-sm-5 col-xs-8" id="item">Minute Maid(25)</div>
+		<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
+		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-3" id="item" onclick="quan(this)">Quantity</div>
+		<div class="col-lg-1 col-md-1 col-sm-1 col-xs-0"></div>
+	</div>
+
+	<div class="row">
+	    <div class="col-lg-1 col-md-1 col-sm-1 col-xs-0"></div>
+		<div class="col-lg-5 col-md-5 col-sm-5 col-xs-8" id="item">Real Juice(20)</div>
+		<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
+		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-3" id="item" onclick="quan(this)">Quantity</div>
+		<div class="col-lg-1 col-md-1 col-sm-1 col-xs-0"></div>
+	</div>
+
+	<div class="row">
+	    <div class="col-lg-1 col-md-1 col-sm-1 col-xs-0"></div>
+		<div class="col-lg-5 col-md-5 col-sm-5 col-xs-8" id="item">Manchow(10)</div>
+		<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
+		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-3" id="item" onclick="quan(this)">Quantity</div>
+		<div class="col-lg-1 col-md-1 col-sm-1 col-xs-0"></div>
+	</div>
+
+	<div class="row">
+	    <div class="col-lg-1 col-md-1 col-sm-1 col-xs-0"></div>
+		<div class="col-lg-5 col-md-5 col-sm-5 col-xs-8" id="item">Kurkure Salted Peanuts(10)</div>
+		<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
+		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-3" id="item" onclick="quan(this)">Quantity</div>
+		<div class="col-lg-1 col-md-1 col-sm-1 col-xs-0"></div>
+	</div>
+
+	<div class="row">
+	    <div class="col-lg-1 col-md-1 col-sm-1 col-xs-0"></div>
+		<div class="col-lg-5 col-md-5 col-sm-5 col-xs-8" id="item">Kurkure Chatpata Mix(10)</div>
+		<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
+		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-3" id="item" onclick="quan(this)">Quantity</div>
+		<div class="col-lg-1 col-md-1 col-sm-1 col-xs-0"></div>
+	</div>
+
+	<div class="row">
+	    <div class="col-lg-1 col-md-1 col-sm-1 col-xs-0"></div>
+		<div class="col-lg-5 col-md-5 col-sm-5 col-xs-8" id="item">Kurkure Shahi Mix(10)</div>
+		<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
+		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-3" id="item" onclick="quan(this)">Quantity</div>
+		<div class="col-lg-1 col-md-1 col-sm-1 col-xs-0"></div>
+	</div>
+
+	<div class="row">
+	    <div class="col-lg-1 col-md-1 col-sm-1 col-xs-0"></div>
+		<div class="col-lg-5 col-md-5 col-sm-5 col-xs-8" id="item">Kurkure Mumbai Mix(10)</div>
+		<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
+		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-3" id="item" onclick="quan(this)">Quantity</div>
+		<div class="col-lg-1 col-md-1 col-sm-1 col-xs-0"></div>
+	</div>
+
+	<div class="row">
+	    <div class="col-lg-1 col-md-1 col-sm-1 col-xs-0"></div>
+		<div class="col-lg-5 col-md-5 col-sm-5 col-xs-8" id="item">Maggie Pichku(16)</div>
+		<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
+		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-3" id="item" onclick="quan(this)">Quantity</div>
+		<div class="col-lg-1 col-md-1 col-sm-1 col-xs-0"></div>
+	</div>
+
+	<div class="row">
+	    <div class="col-lg-1 col-md-1 col-sm-1 col-xs-0"></div>
+		<div class="col-lg-5 col-md-5 col-sm-5 col-xs-8" id="item">Kurkure(10,20)</div>
+		<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
+		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-3" id="item" onclick="quan(this)">Quantity</div>
+		<div class="col-lg-1 col-md-1 col-sm-1 col-xs-0"></div>
+	</div>
+
+	<div class="row">
+	    <div class="col-lg-1 col-md-1 col-sm-1 col-xs-0"></div>
+		<div class="col-lg-5 col-md-5 col-sm-5 col-xs-8" id="item">Bingo Mad Angles(10)</div>
+		<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
+		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-3" id="item" onclick="quan(this)">Quantity</div>
+		<div class="col-lg-1 col-md-1 col-sm-1 col-xs-0"></div>
+	</div>
+
+	<div class="row">
+	    <div class="col-lg-1 col-md-1 col-sm-1 col-xs-0"></div>
+		<div class="col-lg-5 col-md-5 col-sm-5 col-xs-8" id="item">Lays Masala(10)</div>
+		<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
+		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-3" id="item" onclick="quan(this)">Quantity</div>
+		<div class="col-lg-1 col-md-1 col-sm-1 col-xs-0"></div>
+	</div>
+
+	<div class="row">
+	    <div class="col-lg-1 col-md-1 col-sm-1 col-xs-0"></div>
+		<div class="col-lg-5 col-md-5 col-sm-5 col-xs-8" id="item">Lays American Cheese(10)</div>
+		<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
+		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-3" id="item" onclick="quan(this)">Quantity</div>
+		<div class="col-lg-1 col-md-1 col-sm-1 col-xs-0"></div>
+	</div>
+
+	<div class="row">
+	    <div class="col-lg-1 col-md-1 col-sm-1 col-xs-0"></div>
+		<div class="col-lg-5 col-md-5 col-sm-5 col-xs-8" id="item">Chatax(10)</div>
+		<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
+		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-3" id="item" onclick="quan(this)">Quantity</div>
+		<div class="col-lg-1 col-md-1 col-sm-1 col-xs-0"></div>
+	</div>
+
+	<div class="row">
+	    <div class="col-lg-1 col-md-1 col-sm-1 col-xs-0"></div>
+		<div class="col-lg-5 col-md-5 col-sm-5 col-xs-8" id="item">Uncle Chips(20)</div>
+		<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
+		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-3" id="item" onclick="quan(this)">Quantity</div>
+		<div class="col-lg-1 col-md-1 col-sm-1 col-xs-0"></div>
+	</div>
+
+	<div class="row">
+	    <div class="col-lg-1 col-md-1 col-sm-1 col-xs-0"></div>
+		<div class="col-lg-5 col-md-5 col-sm-5 col-xs-8" id="item">Bicano lays(10)</div>
+		<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
+		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-3" id="item" onclick="quan(this)">Quantity</div>
+		<div class="col-lg-1 col-md-1 col-sm-1 col-xs-0"></div>
+	</div>
+
+	<div class="row">
+	    <div class="col-lg-1 col-md-1 col-sm-1 col-xs-0"></div>
+		<div class="col-lg-5 col-md-5 col-sm-5 col-xs-8" id="item">Kurkure Navratan Mix(10)</div>
+		<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
+		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-3" id="item" onclick="quan(this)">Quantity</div>
+		<div class="col-lg-1 col-md-1 col-sm-1 col-xs-0"></div>
+	</div>
+
+	<div class="row">
+	    <div class="col-lg-1 col-md-1 col-sm-1 col-xs-0"></div>
+		<div class="col-lg-5 col-md-5 col-sm-5 col-xs-8" id="item">Masala Magic(4)</div>
+		<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
+		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-3" id="item" onclick="quan(this)">Quantity</div>
+		<div class="col-lg-1 col-md-1 col-sm-1 col-xs-0"></div>
+	</div>
+
+	<div class="row">
+	    <div class="col-lg-1 col-md-1 col-sm-1 col-xs-0"></div>
+		<div class="col-lg-5 col-md-5 col-sm-5 col-xs-8" id="item">Complan(130)</div>
+		<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
+		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-3" id="item" onclick="quan(this)">Quantity</div>
+		<div class="col-lg-1 col-md-1 col-sm-1 col-xs-0"></div>
+	</div>
+
+	<div class="row">
+	    <div class="col-lg-1 col-md-1 col-sm-1 col-xs-0"></div>
+		<div class="col-lg-5 col-md-5 col-sm-5 col-xs-8" id="item">Milano Filled(35)</div>
+		<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
+		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-3" id="item" onclick="quan(this)">Quantity</div>
+		<div class="col-lg-1 col-md-1 col-sm-1 col-xs-0"></div>
+	</div>
+
+	<div class="row">
+	    <div class="col-lg-1 col-md-1 col-sm-1 col-xs-0"></div>
+		<div class="col-lg-5 col-md-5 col-sm-5 col-xs-8" id="item">Bakesmith Biscuit(10)</div>
+		<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
+		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-3" id="item" onclick="quan(this)">Quantity</div>
+		<div class="col-lg-1 col-md-1 col-sm-1 col-xs-0"></div>
+	</div>
+
+	<div class="row">
+	    <div class="col-lg-1 col-md-1 col-sm-1 col-xs-0"></div>
+		<div class="col-lg-5 col-md-5 col-sm-5 col-xs-8" id="item">Parle G(5)</div>
+		<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
+		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-3" id="item" onclick="quan(this)">Quantity</div>
+		<div class="col-lg-1 col-md-1 col-sm-1 col-xs-0"></div>
+	</div>
+
+	<div class="row">
+	    <div class="col-lg-1 col-md-1 col-sm-1 col-xs-0"></div>
+		<div class="col-lg-5 col-md-5 col-sm-5 col-xs-8" id="item">Magix(5)</div>
+		<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
+		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-3" id="item" onclick="quan(this)">Quantity</div>
+		<div class="col-lg-1 col-md-1 col-sm-1 col-xs-0"></div>
+	</div>
+
+	<div class="row">
+	    <div class="col-lg-1 col-md-1 col-sm-1 col-xs-0"></div>
+		<div class="col-lg-5 col-md-5 col-sm-5 col-xs-8" id="item">IC Chocobar(10)</div>
+		<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
+		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-3" id="item" onclick="quan(this)">Quantity</div>
+		<div class="col-lg-1 col-md-1 col-sm-1 col-xs-0"></div>
+	</div>
+
+	<div class="row">
+	    <div class="col-lg-1 col-md-1 col-sm-1 col-xs-0"></div>
+		<div class="col-lg-5 col-md-5 col-sm-5 col-xs-8" id="item">IC Butterscotch(35)</div>
+		<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
+		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-3" id="item" onclick="quan(this)">Quantity</div>
+		<div class="col-lg-1 col-md-1 col-sm-1 col-xs-0"></div>
+	</div>
+
+	<div class="row">
+	    <div class="col-lg-1 col-md-1 col-sm-1 col-xs-0"></div>
+		<div class="col-lg-5 col-md-5 col-sm-5 col-xs-8" id="item">IC Chocobliss(35)</div>
+		<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
+		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-3" id="item" onclick="quan(this)">Quantity</div>
+		<div class="col-lg-1 col-md-1 col-sm-1 col-xs-0"></div>
+	</div>
+
+	<div class="row">
+	    <div class="col-lg-1 col-md-1 col-sm-1 col-xs-0"></div>
+		<div class="col-lg-5 col-md-5 col-sm-5 col-xs-8" id="item">IC Chocobar(10)</div>
+		<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
+		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-3" id="item" onclick="quan(this)">Quantity</div>
+		<div class="col-lg-1 col-md-1 col-sm-1 col-xs-0"></div>
+	</div>
+
+	<div class="row">
+	    <div class="col-lg-1 col-md-1 col-sm-1 col-xs-0"></div>
+		<div class="col-lg-5 col-md-5 col-sm-5 col-xs-8" id="item">Ekdum Mango(20)</div>
+		<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
+		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-3" id="item" onclick="quan(this)">Quantity</div>
+		<div class="col-lg-1 col-md-1 col-sm-1 col-xs-0"></div>
+	</div>
+
+	<div class="row">
+	    <div class="col-lg-1 col-md-1 col-sm-1 col-xs-0"></div>
+		<div class="col-lg-5 col-md-5 col-sm-5 col-xs-8" id="item">Frooti(10)</div>
+		<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
+		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-3" id="item" onclick="quan(this)">Quantity</div>
+		<div class="col-lg-1 col-md-1 col-sm-1 col-xs-0"></div>
+	</div>
+
+	<div class="row">
+	    <div class="col-lg-1 col-md-1 col-sm-1 col-xs-0"></div>
+		<div class="col-lg-5 col-md-5 col-sm-5 col-xs-8" id="item">IC Chocobar(10)</div>
+		<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
+		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-3" id="item" onclick="quan(this)">Quantity</div>
+		<div class="col-lg-1 col-md-1 col-sm-1 col-xs-0"></div>
+	</div>
+
+
+</div>
+
+</div>
+<script type="text/javascript" src="../jquery.js"></script>
+<script type="text/javascript" src="../bootstrap/js/bootstrap.js"></script>
+</body>
+</html>

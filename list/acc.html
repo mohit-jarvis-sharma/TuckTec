@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>|Accessories|</title>
+	<link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Raleway|Comfortaa' rel='stylesheet' type='text/css'>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="../css/main.css">
+	<link rel="stylesheet" type="text/css" href="../css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="../css/list.css">
+	<script type="text/javascript">
+
+function quan(e){
+	var x = prompt("Enter : ");
+	e.innerText = x;
+}
+</script>
+</head>
+<body>
+
+<div class="container-fluid">
+	<nav class="nav navbar-fixed-top" role="navigation" id="nav_edit">
+	    <div class="container-fluid">
+	        <div class="navbar-header">
+	    	    <a href="../main.html" class="navbar-brand" id="head">TuckTec</a>
+	    	    <button class="collapsed navbar-toggle" type="button" data-toggle="collapse" id="but_edit" data-target="#ham">
+	    	    	<span class="sr-only">Navigation Toggle</span>
+	    	    	<span class="icon-bar"></span>
+	    	    	<span class="icon-bar"></span>
+	    	    </button>
+	        </div>
+
+	        <div class="navbar-collapse" id="ham">
+	        <ul class="nav navbar-nav" role="menu">
+	        	<li> <a href="../list.html" id="links">List</a> </li>
+	        	<li> <a href="../contact.html" id="links">Contact</a></li>
+	        </ul>
+	        </div>
+	    </div>
+	</nav>
+
+<!--
+	<div class="container-fluid">
+            	<div class="row">
+            		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-4" id="item_head">Item</div>
+            		<div class="col-lg-1 col-md-1 col-sm-1 col-xs-0"></div>
+            		<div class="col-lg-2 col-md-2 col-sm-2 col-xs-4" id="item_head">Quantity</div>
+            		<div class="col-lg-1 col-md-1 col-sm-1 col-xs-0"></div>
+            		<div class="col-lg-2 col-md-2 col-sm-2 col-xs-4" id="item_head">Price</div>
+            	</div>
+	</div>
+-->
+
+<div class="container-fluid">
+	<div class="row">
+	    <div class="col-lg-1 col-md-1 col-sm-1 col-xs-0"></div>
+		<div class="col-lg-5 col-md-5 col-sm-5 col-xs-8" id="item" style="background:rgba(205,21,31,0.1);">ITEM ( Price )</div>
+		<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
+		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-3" id="item" style="background:rgba(205,21,31,0.1);">QUANTITY</div>
+		<div class="col-lg-1 col-md-1 col-sm-1 col-xs-0"></div>
+	</div>
+
+	<div class="row">
+	    <div class="col-lg-1 col-md-1 col-sm-1 col-xs-0"></div>
+		<div class="col-lg-5 col-md-5 col-sm-5 col-xs-8" id="item"> <input type="text" name="" placeholder="Enter Item name" id="newItem"> </div>
+		<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
+		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-3 quant" id="item" onclick="quan(this)">Quantity </div>
+		<div class="col-lg-1 col-md-1 col-sm-1 col-xs-0"></div>
+	</div>
+
+	<div class="row">
+	    <div class="col-lg-1 col-md-1 col-sm-1 col-xs-0"></div>
+		<div class="col-lg-5 col-md-5 col-sm-5 col-xs-8" id="item">Surf Excel(10)</div>
+		<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
+		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-3" id="item" onclick="quan(this)">Quantity</div>
+		<div class="col-lg-1 col-md-1 col-sm-1 col-xs-0"></div>
+	</div>
+
+	<div class="row">
+	    <div class="col-lg-1 col-md-1 col-sm-1 col-xs-0"></div>
+		<div class="col-lg-5 col-md-5 col-sm-5 col-xs-8" id="item">Tide(10)</div>
+		<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
+		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-3" id="item" onclick="quan(this)">Quantity</div>
+		<div class="col-lg-1 col-md-1 col-sm-1 col-xs-0"></div>
+	</div>
+
+	<div class="row">
+	    <div class="col-lg-1 col-md-1 col-sm-1 col-xs-0"></div>
+		<div class="col-lg-5 col-md-5 col-sm-5 col-xs-8" id="item">Bedsheet(250)</div>
+		<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
+		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-3" id="item" onclick="quan(this)">Quantity</div>
+		<div class="col-lg-1 col-md-1 col-sm-1 col-xs-0"></div>
+	</div>
+
+	<div class="row">
+	    <div class="col-lg-1 col-md-1 col-sm-1 col-xs-0"></div>
+		<div class="col-lg-5 col-md-5 col-sm-5 col-xs-8" id="item">Bucket(100)</div>
+		<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
+		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-3" id="item" onclick="quan(this)">Quantity</div>
+		<div class="col-lg-1 col-md-1 col-sm-1 col-xs-0"></div>
+	</div>
+
+</div>
+<script type="text/javascript" src="../jquery.js"></script>
+<script type="text/javascript" src="../bootstrap/js/bootstrap.js"></script>
+</body>
+</html>
